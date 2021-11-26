@@ -1,12 +1,12 @@
-# arduino-cpp-style-printing
+# C++ style printing for [PlatformIO](https://github.com/platformio)
 
 Prefer `cout << "Hello World" << endl;` over wonky `Serial.print()`'s? This is what you need!
 
-Bring easy & elegant C++ style printing to the Arduino framework. Tested with [PlatformIO](https://github.com/platformio).
+Bring easy & elegant C++ style printing to the [PlatformIO](https://github.com/platformio) framework.
 
 ## Usage
 
-Place `include/print.hpp` and `source/print.cpp` into your Arduino project. To get started, create and keep an instance of `Prt`; this will be the equivalent of `<iostream>`'s `std::cout`.
+Add this repository's URL to your `.platformio.ini`'s `lib_deps`. To get started, create and keep an instance of `Prt`; this will be the equivalent of `<iostream>`'s `std::cout`.
 
 ```cpp
 Prt out;
@@ -33,5 +33,5 @@ will print `Look at my array: [1, 2, 3]` as expected.
 
 ### Custom types and objects
 
-This can easily be expanded to print any custom classes' instances by adding definitions for how to print them to `source/print.cpp`!
+This can easily be expanded to print any custom classes' instances by adding definitions for how to print them. See `source/print.cpp` for examples of standard types.
 
